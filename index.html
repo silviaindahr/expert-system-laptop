@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Expert System Laptop</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <div class="container">
+
   <h1>Sistem Pakar Diagnosa Laptop</h1>
+  <p class="subtitle">
+    Jawab pertanyaan berikut untuk mengetahui diagnosa kerusakan laptop.
+  </p>
 
-  <div id="question-box">
-    <p id="question">Apakah laptop menyala?</p>
+   <div class="card">
+    <h2 id="question">Apakah laptop menyala?</h2>
 
-    <button onclick="answer('yes')">Yes</button>
-    <button onclick="answer('no')">No</button>
+    <div class="buttons">
+      <button onclick="answer('yes')">YES</button>
+      <button onclick="answer('no')">NO</button>
+    </div>
+
+    <div id="result"></div>
   </div>
 
-  <h2 id="result"></h2>
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
